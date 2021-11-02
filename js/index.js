@@ -28,8 +28,12 @@ function calculateAll() {
 function removeProduct(event) {
   const target = event.currentTarget;
   console.log('The target in remove is:', target);
-  //... your code goes here
+  //let product = target.closest('.product');
+  let elem = document.getElementsByClassName('.product');
+  elem.parentNode.removeChild(elem);
+  //cart.removeChild('.product').innerText = removeChild('click');
 }
+
 
 // ITERATION 5
 
