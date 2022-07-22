@@ -20,12 +20,16 @@ function calculateAll() {
       total += updateSubtotal(allProduct);
     });
     document.querySelector('#total-value span').innerText = total.toFixed(2);
-
 }
 
 // ITERATION 4
 
 function removeProduct(event) {
+  document.querySelectorAll('.product').forEach((product) => product.remove());
+  for (let i = 0; i < product.length; i++) {
+    addEventListener(click);
+    return 
+  }
   const target = event.currentTarget;
   console.log('The target in remove is:', target);
   //let product = target.closest('.product');
